@@ -12,12 +12,19 @@
     <hr>
 
     <form action="">
-        <label>User Name</label>
-        <input> <br><br>
-        <label>Password </label>
-        <input type="password"> <br> <br>
-        <label>Email</label>
-        <input type="email"> <br><br>
+        <fieldset>
+            <legend>User Details</legend>
+            <label>User Name *</label>
+            <input type="text" required placeholder="enter  user name" autofocus> <br><br>
+
+            <label>Password </label>
+            <input type="password"> <br> <br>
+            <label>Email</label>
+            <input type="email">
+        </fieldset>
+        <br>
+        <fieldset >
+            <legend>User Other Details</legend>
         <label for="">Gender</label>
         <input type="radio" name="gender" id="male">
         <label for="male"> Male</label>
@@ -31,16 +38,16 @@
         <input type="checkbox"><label for="">JavaScript</label>
         <input type="checkbox"><label for="">Reac Js</label>
         <input type="checkbox"><label for="">Bootstrap</label> <br><br>
-        
+
         <label for="">Date of Birth</label>
         <input type="date"> <input type="time"> <br><br>
-        
+
         <label for="">Favorite Color</label>
         <input type="color" name="" id=""> <br><br>
-        
+
         <label for="">Upload Your Document</label>
-        <input type="file"> <br><br>
-        
+        <input type="file" multiple> <br><br>
+
         <label for="">Nationality</label>
         <input list="nationality">
 
@@ -54,7 +61,26 @@
             <option value="Indo">Indo</option>
             <option value="Afferican">Afferican</option>
         </datalist>
-
+    
+        <br><br>
+        <label for="">Language you know</label>
+        <select>
+            <option value="">Nepali</option>
+            <option value="">Hindi</option>
+            <option value="">Bhojpuri</option>
+            <option value="">Maithali</option>
+            <option value="">Newari</option>
+        </select><br><br>
+        <label for="">Full Address</label> <br>
+        <textarea></textarea>
+    </fieldset>
+        <br>
+        <fieldset>
+            <legend>User Action</legend>
+        <input type="submit" name="" id="">
+        <input type="reset" name="" id="">
+        <button>Cancel</button>
+    </fieldset>
     </form>
 </body>
 
