@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(227, 227, 227);
+            padding: 30px 0;
+            
+        }
+        header .logo{
+            font-size: 18px;
+            color: gray;
+        }
+        header .box ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap:60px;
+            font-size: 14px;
+            color: gray;
+        }
+
+        section{
+            background-color: #1ABC9C;
+        }
+        section .container{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+        section .container .first{
+            padding: 70px 0 35px 0;
+        }
+
+        section .container .third{
+            padding: 35px 0 75px 0;
+            font-size: 30px;
+        }
+
+        section .container .image img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ME</div>
+        <div class="box">
+            <ul>
+                <li>WHO</li>
+                <li>WHAT</li>
+                <li>WHERE</li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="first">Who Am I?</div>
+            <div class="image"><img src="https://www.w3schools.com/bootstrap/bird.jpg" alt=""></div>
+            <div class="third">I'm an adventurer</div>
+        </div>
+    </section>
+
+ 
+</body>
+</html>
