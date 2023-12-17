@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+
+            position: relative;
+
+            animation-name: anim_box;
+            animation-duration: 5s;
+
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes anim_box {
+            0%{left:0; top:0; background-color: blue;}
+            25%{left:800px; top:0; background-color: green}
+            50%{left:800px; top:500px; background-color:purple}
+            75%{left:0px; top:500px; background-color: yellow}
+            100%{left:0px; top:0px; background-color: orange}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

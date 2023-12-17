@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 150px 150px ;
+        }
+        .container{
+            width: 450px;
+            height: 350px;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+        .container .box{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 15s;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+        }
+        .container .box img{
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes slider {
+            0%{transform: translateX(450px);}
+            25%{transform: translateX(-450px);}
+            45%{transform: translateX(-900px);}
+            50%{transform: translateX(-900px);}
+            70%{transform: translateX(-1350px);}
+            75%{transform: translateX(-1350px);}
+            95%{transform: translateX(-1800px);}
+            100%{transform: translateX(-1800px);}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWFsfGVufDB8fDB8fHww" alt="">
+            <img src="https://media.istockphoto.com/id/1492287497/photo/lovely-asian-mother-and-adorable-baby-boy-feeding-little-goat-on-the-farm-together-little.webp?b=1&s=170667a&w=0&k=20&c=mOvbudiMwpkTCls0Ryb4tiJmdpKiPU3Lr-geUq-nfHc=" alt="">
+            <img src="https://media.istockphoto.com/id/1199279669/photo/big-eyed-naughty-obese-cat-behind-the-desk-with-red-hat-grey-color-british-sort-hair-cat.webp?b=1&s=170667a&w=0&k=20&c=ohoTPRNiNT38ItF9sncBQqRXFG0Ra7TS8tnv0ZgWDec=" alt="">
+            <img src="https://media.istockphoto.com/id/1474631988/photo/commercial-chicken-farm.webp?b=1&s=170667a&w=0&k=20&c=1n8AJ3UPcSDR5bDXFRxIyt8eRjLKkaXGo2Kpn-4ECNM=" alt="">
+        </div>
+    </div>
+</body>
+</html>

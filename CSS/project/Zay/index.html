@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .flex {
+            display: flex;
+            gap: 5px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-nav {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .container {
+            width: 1300px;
+            margin: auto;
+        }
+
+        header .nav {
+            background-color: rgb(238, 236, 236);
+            padding: 20px 0;
+        }
+
+        header .nav ul li{
+            padding: 0 25px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        header .nav .container .logo h1 a{
+            font-size: 48px;
+            color: #59ab6e;
+;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="container flex">
+            <div class="contact flex">
+                <div class="email"><i class="fa fa-envelope mx-2"></i> info@company.com</div>
+                <div class="moible-no"><i class="fa fa-phone mx-2"></i> 010-020-0340</div>
+            </div>
+            <div class="social-media">
+                <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i>
+                <i class="fab fa-instagram fa-sm fa-fw me-2"></i>
+                <i class="fab fa-twitter fa-sm fa-fw me-2"></i>
+                <i class="fab fa-linkedin fa-sm fa-fw"></i>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="nav">
+            <div class="container flex">
+                <div class="logo">
+                    <h1><a href="/">Zay</a></h1>
+                </div>
+                <ul class="flex">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <div class="social-media   flex">
+                    <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                    <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <script src="https://kit.fontawesome.com/689e11689f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
