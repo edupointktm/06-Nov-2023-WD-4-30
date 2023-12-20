@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) ;
+            grid-template-rows: 100px 200px 200px 100px;
+            
+            grid-template-areas: "head head head"  
+                                 "side cont1 cont1" 
+                                 "side cont2 cont3"
+                                 "foot foot foot";
+            gap: 5px;
+            
+
+            font-size: 35px;
+            color: white;
+            text-align: center;
+        }
+        .header{
+            background-color: red;
+            grid-area: head;
+            line-height: 100px;
+        }
+
+       
+        .sidebar{
+            background-color: red;
+            grid-area: side;
+            line-height: 400px;
+        }
+
+        .content1{
+            background-color: red;
+            grid-area: cont1;
+            line-height: 200px;
+        }
+
+        .content2{
+            background-color: red;
+            grid-area: cont2;
+            line-height: 200px;
+        }
+
+        .content3{
+            background-color: red;
+            grid-area: cont3;
+            line-height: 200px;
+        }
+        .footer{
+            background-color: red;
+            grid-area: foot;
+            line-height: 100px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content1">Content1</div>
+        <div class="content2">Content2</div>
+        <div class="content3">Content3</div>
+        <div class="footer">Footer</div>
+    </div>
 </body>
 </html>

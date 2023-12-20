@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 1300px;
+    margin: auto;
+}
+
+header .nav {
+    background-color: white;
+    padding: 20px 0;
+}
+
+header .nav ul li{
+    padding: 0 25px;
+    font-size: 18px;
+    font-weight: 300;
+}
+header .nav .container .logo h1 a{
+    font-size: 48px;
+    color: #59ab6e;
+;
+}
+
+#slider{
+    background-color: #EFEFEF;
+}
+#slider .container .content{
+   
+    display:  inline-block;
+    width: 1000px;
+    color:rgb(108, 107, 107)
+
+}
+#slider .container .content .head{
+    font-size: 45px;
+    padding-bottom: 15px;
+    padding-top: 100px;
+}
+#slider .container .content .sub-head{
+    font-size: 27px;
+    padding-bottom: 15px;
+}
+
+#slider .container .content .details{
+    font-size: 16px;
+    padding-bottom: 70px;
+    
+}
+#slider .container .image{
+    display: inline-block;
+}
+#slider .container .image img{
+    
+   width: 100%;
+   
+}
