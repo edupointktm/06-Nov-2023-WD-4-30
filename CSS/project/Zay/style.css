@@ -5,7 +5,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+:root{
+    --primary-color:#59ab6e;
+    --secondary-color:rgb(85, 85, 85) ;
+}
 ul {
     list-style: none;
     padding: 0;
@@ -48,7 +51,7 @@ header .nav ul li{
 }
 header .nav .container .logo h1 a{
     font-size: 48px;
-    color: #59ab6e;
+    color: var(--primary-color);
 ;
 }
 
@@ -84,4 +87,85 @@ header .nav .container .logo h1 a{
     
    width: 100%;
    
+}
+
+
+#product .container .heading{
+    text-align: center;
+    padding: 80px 10px;
+    margin:  0 330px;
+    color: var(--secondary-color)
+}
+#product .container .heading .head h1{
+    font-size: 45px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    
+}
+
+#product .container .heading .details p{
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 25px;
+    
+}
+
+#product .container .product-area .card{
+    /* border: 1px solid red; */
+    width: 415px;
+    background-color: white;
+    color:var(--secondary-color)
+}
+
+#product .container .product-area .card .image{
+    width: 100%;
+    height: 330px;
+    /* border: 2px solid blue; */
+}
+
+#product .container .product-area .card .image img{
+    width: 100%;
+    height: 100%;
+}
+
+#product .container .product-area .card .card-content-body{
+    margin: 15px;
+}
+
+#product .container .product-area .card .card-content-body .rating{
+    padding: 10px 0 15px 0;
+    font-size: 18px;
+}
+
+#product .container .product-area .card .card-content-body .head h2{
+    
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#product .container .product-area .card .card-content-body .details p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+#product .container .product-area .card .card-content-body .review{
+    padding: 15px 0 30px 0;
+}
+
+.cat{
+    background-color:white;
+}
+.pro{
+background-color: #E9EEF5;
+}
+
+.circle{
+    border-radius: 50%;
+    border: 2px solid red;
+  
+}
+
+.text-center{
+    text-align: center;
 }
