@@ -1,0 +1,5 @@
+alert("Welcome to Javascript world by alert")
+confirm("Are you sure ? ")
+prompt("Enter your name : ")
+document.write("<h1> Welcome to Javascript world by Docment Write <h1>")
+console.log("Welcome to Javascript world by console")
