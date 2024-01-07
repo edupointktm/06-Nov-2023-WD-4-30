@@ -8,6 +8,7 @@
 //  a = 10
 // console.log(a)
 
-const a = 5;
-a = 10;
-console.log(a)
+//no re-decalred and no re-assign value
+// const a = 5;
+// a = 10;
+// console.log(a)

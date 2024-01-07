@@ -1,5 +1,5 @@
-alert("Welcome to Javascript world by alert")
+alert("Welcome to Javascript")
 confirm("Are you sure ? ")
 prompt("Enter your name : ")
-document.write("<h1> Welcome to Javascript world by Docment Write <h1>")
-console.log("Welcome to Javascript world by console")
+document.write("Welcome to Javascript World")
+console.log("Welcome to Javascript World from Console")
