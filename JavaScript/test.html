@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="background-color: black;">
-    <img src="https://themespride.com/demo/woocommerce-shopping-cart/wp-content/themes/woocommerce-shopping-cart-pro/assets/images/brands/brand5.png" alt="">
-</body>
-</html>
+<!-- 6.	A salesman gets commission on the basis of his daily sales and 
+        the rate of commission is as follows:
+        Sales Rs		Commission Rate
+        0 – 1000 			5%
+        1001 – 2500 		10%
+        2501  and more 		15%
+        Write a program asking his total sales and calculate his  
+        commission amount.  -->
+
+    var ds = prompt("Enter your daily sales :")
+    var cp
+    if(ds >=0 && ds <=1000){
+        cp=5
+    }
+    else if(ds >=1001 && ds <=2500){
+        cp=10    
+    }
+    else{
+        cp=15
+    }
+    var ca = ds * cp/100
+

@@ -45,18 +45,68 @@
 
 
 //WAP to ask any five student name and display it.
-var student = ['ram', 'gopal', 'hari', 'ganesh','sujit']
-l = student.length
-document.write(`<table border=1>`)
-document.write(`<th> Name </th>`)
-for(i=0;i<l;i++){
-    document.write(`
-    
-     <tr>
-     <td>${student[i]}</td>
-     </tr>`)
-}
-document.write(`</table>`)
+// var student = ['ram', 'gopal', 'hari', 'ganesh','sujit']
+// l = student.length
+// document.write(`<table border=1>`)
+// document.write(`<th> Name </th>`)
+// for(i=0;i<l;i++){
+//     document.write(`
+
+//      <tr>
+//      <td>${student[i]}</td>
+//      </tr>`)
+// }
+// document.write(`</table>`)
 
 
 // Object
+// []=array=> data store in index pattern => start from 0
+// {} object => it store data in key:value pattern
+
+var student = [
+    {
+        names: "Prabhat",
+        address: "Janakpur",
+        mobile: "9840027"
+    },
+    {
+        names: "Ram",
+        address: "Kathamndu",
+        mobile: "648845"
+    },
+    {
+        names: "Hari",
+        address: "Pokhara",
+        mobile: "1254545"
+    },
+    {
+        names: "Gopal",
+        address: "Morang",
+        mobile: "654855"
+    },
+    {
+        names: "Sujit",
+        address: "Dharan",
+        mobile: "97454"
+    }
+]
+
+var l = student.length
+document.write(`<table border=1 width=500px>
+    <tr>
+        <th>Name</th>
+        <th>Address </th>
+        <th> Mobile </th>
+    </tr>
+`)
+for (i = 0; i < l; i++) {
+    document.write(`
+   <tr>
+       <td> ${student[i].names} </td>
+       <td> ${student[i].address} </td> 
+       <td> ${student[i].mobile} </td>
+    </tr>
+    `)
+
+}
+document.write(`</table>`)
