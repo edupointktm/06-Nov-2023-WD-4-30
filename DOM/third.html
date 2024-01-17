@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <button onclick="coloRed()">Color Red</button> 
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()"> Show </button>
+    <button id="sh" onclick="showHide()">ON</button>
+    <br><br>
+    <div id="cont">BROADWAY</div>
+    <script>
+
+        function coloRed() {
+            document.getElementById('cont').style.color="red"
+        }
+
+        function hide(){
+            document.getElementById('cont').style.display="none"
+        }
+
+        function show(){
+            document.getElementById('cont').style.display="block"
+        }
+
+        function showHide(){
+            var get_name = document.getElementById('sh').innerHTML
+            if(get_name=="ON"){
+                document.getElementById('sh').innerHTML="OFF"
+            }
+            else{
+                document.getElementById('sh').innerHTML="ON"
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

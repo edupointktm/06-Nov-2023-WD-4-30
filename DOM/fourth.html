@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Document</title>
+</head>
+<body>
+    
+    <button id='on-off' onclick="onOff()">ON</button> <br><br>
+    <img src="https://prabhatmallik.com.np/dom/image/OFF.jpg" id="bulb" alt="" width="25%">
+    <hr>
+    First Number 
+    <input type="number" id="first-no">
+    <label for="" >Second number</label>
+    <input type="number" id="second-no">
+    <select name=""  id="operator">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+    </select>
+    <button id="btn-result" onclick="calculation()">Result</button>
+    <span id="text-result"></span>
+
+</body>
+
+<script>
+    function onOff(){
+        var get_name = document.getElementById('on-off').innerHTML
+
+        if(get_name=="ON"){
+            document.getElementById('on-off').innerHTML = "OFF"
+            document.getElementById('bulb').src = "https://prabhatmallik.com.np/dom/image/ON.jpg"
+        }
+        else{
+            document.getElementById('on-off').innerHTML="ON"
+            document.getElementById('bulb').src="https://prabhatmallik.com.np/dom/image/OFF.jpg"
+        }
+    }
+
+    function calculation(){
+        var fn = parseInt(document.querySelector('#first-no').value)
+        var sn = parseInt(document.querySelector('#second-no').value)
+        var get_operator = document.querySelector('#operator').value
+
+        if(get_operator=="+"){
+            var result =fn + sn
+            document.querySelector('#text-result').innerHTML = "ADD = " +result
+        }
+
+        else if(get_operator=="-"){
+            var result =fn - sn
+            document.querySelector('#text-result').innerHTML = "Subtract = " +result
+        }
+        else if(get_operator=="*"){
+            var result =fn * sn
+            document.querySelector('#text-result').innerHTML = "Multiply = " +result
+        }
+      
+    }
+
+</script>
+</html>

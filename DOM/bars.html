@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bars{
+            cursor: pointer;
+        }
+        .bars1, .bars2, .bars3{
+            width: 30px;
+            height: 2px;
+            margin: 4px 0;
+            background-color:  black;
+        }
+
+        .close .bars2{
+            visibility: hidden;
+        }
+
+        .close .bars1{
+            transform: rotate(45deg) translate(2px, 1px);
+        }
+
+        .close .bars3{
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+    </style>
+</head>
+<body>
+        <div class="bars" onclick="barsClose()">
+            <div class="bars1"></div>
+            <div class="bars2"></div>
+            <div class="bars3"></div>
+        </div>
+    <script>
+
+        function barsClose(){
+            document.querySelector('.bars').classList.toggle('close')
+        }
+    </script>
+</body>
+</html>
