@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            border: 1px solid black;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="hide-show">Hide/Show</button>
+    <br><br>
+    <div class="cont">Boradway</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#hide').click(function(){
+
+           $('.cont').hide(3000)
+        })
+
+        $('#show').click(function(){
+            $('.cont').show(5000)
+        })
+
+        $('#hide-show').click(function(){
+            $('.cont').toggle(2000)
+        })
+    </script>
+</body>
+</html>
