@@ -9,11 +9,8 @@ function App() {
         <>
 
             <Nav />
-
             <Slider />
-
             <Section />
-
             <Footer />
 
         </>
