@@ -10,14 +10,14 @@ import Page_not_found from "./Page_not_found";
 import Student_card from "./Student_card";
 import Student_all_details from "./Student_all_details";
 function Section() {
-
+    let x = "Broadway Infosys"
     return (
         <>
                        
 
             
                 <Routes>
-                    <Route path="/" element={<Home />}/>
+                    <Route path="/" element={<Home msg={x} />}/>
                     <Route path="/about" element={<About />}/>
                     <Route path="/course" element={<Course />}/>
                     <Route path="/gallery" element={<Gallery />}/>
